@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <section class="left-text">
+                <h2>Asgard</h2>
+                <p>A could based community for you to
+                    connect with fellow Asgardians</p>
+            </section>
+        </div>
+        <div class="right">
+            <div class="holder">
+                <div class="right-top">
+                    <h3 class="example">Sign up to Asgard</h3>
+                    <p>Already have an account? <a href="#"><strong>Log in</strong></a></p>
+                </div>
+                <div class="btn">
+                    <button class="btn-1"><img class="google-icon" src="google-logo.png"><a href="#"> Sign up with Google</a></button>
+                    <button class="btn-2"><img class="facebook-icon" src="facebook-icon-preview.png"></button>
+                    <button class="btn-3"><img class="apple-icon" src="black-apple-icon.png"></button>
+                </div>
+                <div class="mid-text">
+                    <p>- OR -</p>
+                </div>
+                <div class="input-container name">
+                    <label for="fname">Full Name</label>
+                    <input class="no-outline" id="fname" name="fname" type="name">
+                </div>
+                <div class="input-container email">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input id="myInput" name="password" type="password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        By creating account, you agree to accept or
+                        <a href="#">Privacy Policy,</a>
+                        <a href="#">Terms of Service</a> and
+                        <a href="#">Notification settings</a>
+                    </label>
+                </div>
+                <button class="creat-acc" type="text">Creat account</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

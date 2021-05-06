@@ -1,0 +1,4 @@
+Jag skulle nog lyckas ersätta <div> taggar med "section" och "form".
+Sedan har jag både bilder i html och css, men jag vet att sökmotorer 
+-föredrar i html.
+Sökmotorer gillar responsiva sidor. Tycker min sida blev bra till slut. 

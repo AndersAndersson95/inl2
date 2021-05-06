@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    background-image: url("eberhard-grossgasteiger-S-2Ukb_VqpA-unsplash.jpg");
+    background-size: cover;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.right-top {
+    width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color: red;}
+   25%  {color: yellow;}
+   50%  {color: blue;}
+   100% {color: green;}
+}
+
+p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration-line: none;
+    color: blue;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    height: 58.59px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-1 {
+    height: 100%;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.btn-1 a {
+    color: black;
+}
+
+.google-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-2 {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    border: 2px solid #e7e7e7;
+    margin-left: 0.5rem;
+    
+}
+
+.facebook-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-3 {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    border: 2px solid #e7e7e7;
+    margin-left: 0.5rem;
+}
+
+.apple-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.mid-text {
+    margin-top: 1rem;
+}
+
+.input-container {
+    width: 100%;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    height: 24px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+
+.input-container {
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+
+.creat-acc {
+    width: 100%;
+    height: 42px;
+    background-color: rgb(255, 72, 0);
+    font-weight: 800;
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .content {
+        grid-template-columns: none;
+        grid-template-rows: 20% auto;
+        height: 100vh;
+        
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 100%;
+        
+    }
+    .holder {
+        width: 100%;
+        padding: 1rem;
+    }
+}
